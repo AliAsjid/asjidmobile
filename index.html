@@ -6,10 +6,11 @@
   <title>Asjid Mobiles International</title>
   <link rel="stylesheet" href="./style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&family=Unbounded&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-  <header>
-    <h1>Asjid Mobiles Ltd</h1>
+  <header class="sticky-header">
+    <h1 id="header-title">Asjid Mobiles Ltd</h1>
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -32,16 +33,34 @@
     <h2>Our Products</h2>
     <div class="product-grid">
       <div class="product-card">
+        <img src="images/iphone13.jpg" alt="iPhone 13">
         <h3>iPhone 13 – Grade A</h3>
         <p>128GB | Unlocked | Excellent condition</p>
       </div>
       <div class="product-card">
+        <img src="images/samsungs21.jpg" alt="Samsung Galaxy S21">
         <h3>Samsung Galaxy S21 – Brand New</h3>
         <p>256GB | Factory sealed | Black</p>
       </div>
       <div class="product-card">
-        <h3>iPhone XR – Grade B</h3>
-        <p>64GB | Minor wear | Fully functional</p>
+        <img src="images/iphone16p.jpg" alt="iPhone 16 Pro">
+        <h3>iPhone 16 Pro – Grade B</h3>
+        <p>128GB | Minor wear | Fully functional</p>
+      </div>
+      <div class="product-card">
+        <img src="images/iphone15p.jpg" alt="iPhone 15 Pro">
+        <h3>iPhone 15 Pro – Grade A</h3>
+        <p>128GB | Unlocked | Excellent condition</p>
+      </div>
+      <div class="product-card">
+        <img src="images/applewatch9.jpg" alt="Apple Watch Series 9">
+        <h3>Apple Watch Series 9 – Brand New</h3>
+        <p>45mm | GPS + Cellular | Sealed Box</p>
+      </div>
+      <div class="product-card">
+        <img src="images/ipadmini(2024).jpg" alt="Apple iPad mini (2024)">
+        <h3>Apple iPad mini (2024) – Grade A</h3>
+        <p>128GB | Unlocked | Original Box</p>
       </div>
     </div>
   </section>
@@ -74,5 +93,9 @@
   </footer>
 
   <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

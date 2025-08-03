@@ -17,3 +17,20 @@ form.addEventListener('submit', function (e) {
   alert(`Thank you, ${name}! We will reply to your inquiry at ${email}.`);
   form.reset();
 });
+
+// Smooth scroll for nav links
+const navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    target.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+// Scroll to top when clicking header title
+const headerTitle = document.getElementById("header-title");
+headerTitle.style.cursor = "pointer";
+headerTitle.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

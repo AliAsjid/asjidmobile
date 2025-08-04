@@ -17,6 +17,43 @@ body {
     font-family: 'Tilt Warp', cursive;
     margin-bottom: 10px;
   }
+
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.5rem 2rem;
+  }
+
+  .logo {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-title {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    max-height: 32px;
+  }
+
+  .logo-container h1 {
+    font-size: 1rem;
+  }
+}
   
   nav a {
     color: #fff;
